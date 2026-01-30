@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Kuzow;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,7 +19,7 @@ class BrandFactory extends Factory
     {
         $cars = [
             "Toyota" => ["Avalon", "Camry", "Corolla", "Crown", "Grand Highlander", "Highlander", "Land Cruiser", "Prado", "RAV4", "Sienna", "Yaris"],
-            "Lexus" => ["ES 250", "ES 300", "ES 350", "IS 250", "IS 300", "IS 350", "LS 400", "LS 500", "LX 450", "LX 570", "RX 350"],
+            "Lexus" => ["ES 250", "ES 300", "ES 350", "IS 300", "IS 350", "LS 400", "LS 500", "LX 450", "LX 570", "RX 350"],
             "Mercedes-Benz" => ["400E", "AMG GT", "C250", "C300", "C350", "C43 AMG", "E280", "E300", "E350", "E500", "ML350", "ML400", "Maybach GLS", "S-Class", "R-Class", "SL-Class", "W212"],
             "BMW" => ["M4", "M5", "M6", "M8", "M8 Gran Coupe", "X1", "X2", "X3", "X4", "X5", "X6", "X7", "Z4", "i4", "i7", "i8", 'iX'],
             "Hyundai" => ["Elantra", "Sonata", "Mufasa", "NEXO", "Santa Fe", "Tucson", "Venue"],

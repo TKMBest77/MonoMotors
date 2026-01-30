@@ -1,0 +1,31 @@
+/* Базовый стиль кнопок */
+.custom-pagination .page-link {
+    color: #000 !important;
+    /* Черный текст */
+    background-color: #fff !important;
+    /* Белый фон */
+    border-color: #000 !important;
+    /* Черная рамка */
+}
+
+/* Стиль активной страницы */
+.custom-pagination .page-item.active .page-link {
+    background-color: #000 !important;
+    /* Черный фон */
+    color: #fff !important;
+    /* Белый текст */
+    border-color: #000 !important;
+}
+
+/* Стиль при наведении */
+.custom-pagination .page-link:hover {
+    background-color: #333 !important;
+    /* Темно-серый */
+    color: #fff !important;
+}
+
+/* Стиль для неактивных кнопок (например, "Назад" на 1-й странице) */
+.custom-pagination .page-item.disabled .page-link {
+    color: #ccc !important;
+    border-color: #ccc !important;
+}

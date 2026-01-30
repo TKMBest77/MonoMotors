@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\Brand;
 use App\Models\Kuzow;
 use App\Models\Status;
+use App\Models\Year;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -19,11 +20,13 @@ class CarFactory extends Factory
      */
     public function definition(): array
     {
+        $o_brand = Brand::inRandomOrder()->first();
         return [
-            'brand_id' => Brand::inRandomOrder()->first()->id,
+            'brand_id' => $o_brand->name . " " . $o_brand->model_name,
+            'kuzow' => Kuzow::inRandomOrder()->first()->name,
             'color' => fake()->randomElement(['White', 'Gray', 'Black']),
-            'status_id' => Status::inRandomOrder()->first()->id,
-            'year' => fake()->numberBetween(2022, 2026),
+            'status_id' => Status::inRandomOrder()->first()->name,
+            'year' => Year::inRandomOrder()->first()->year,
             'transmission' => fake()->randomElement(['Automatic', 'Mechanic']),
             'motor' => fake()->randomFloat(1, 2, 5),
             'is_new' => fake()->boolean(70),

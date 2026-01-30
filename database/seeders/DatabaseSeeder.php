@@ -7,6 +7,7 @@ use App\Models\Car;
 use App\Models\Color;
 use App\Models\Kuzow;
 use App\Models\Status;
+use App\Models\Year;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Database\Factories\StudentFactory;
 use Illuminate\Database\Seeder;
@@ -21,6 +22,13 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         Brand::factory(250)->create();
+        Year::factory(10)->create();
+        Kuzow::factory(4)->sequence(
+            ['name' => 'Sedan'],
+            ['name' => 'SUV'],
+            ['name' => 'Coupe'],
+            ['name' => 'Crossover'],
+        )->create();
         Status::factory(3)->sequence(
             ['name' => 'Available'],
             ['name' => 'Sold'],

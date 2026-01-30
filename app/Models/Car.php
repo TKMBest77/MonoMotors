@@ -20,4 +20,8 @@ class Car extends Model
     public function status() {
         return $this->belongsTo(Status::class);
     }
+
+    public function year() {
+        return $this->belongsTo(Year::class);
+    }
 }

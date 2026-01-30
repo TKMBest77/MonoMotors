@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('brand_id')->constrained()->cascadeOnDelete();
+            $table->string('brand_id')->constrained()->cascadeOnDelete();
+            $table->string('kuzow')->nullable();
             $table->string('color');
-            $table->foreignId('status_id')->constrained()->cascadeOnDelete();
+            $table->string('status_id')->constrained()->cascadeOnDelete();
             $table->integer('year');
             $table->string('transmission');
             $table->float('motor');

@@ -8,8 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class Kuzow extends Model
 {
     use HasFactory;
-
-    public function brand() {
-        return $this->belongsTo(Brand::class);
-    }
 }

@@ -2,13 +2,12 @@
 
 namespace Database\Factories;
 
-use App\Models\Brand;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Kuzow>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Year>
  */
-class KuzowFactory extends Factory
+class YearFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,8 +16,9 @@ class KuzowFactory extends Factory
      */
     public function definition(): array
     {
+        $year = fake()->numberBetween(2021, 2026);
         return [
-            'name' => fake()->randomElement(['Sedan', 'Crossover', 'SUV', 'Coupe']),
+            'year' => $year,
         ];
     }
 }
