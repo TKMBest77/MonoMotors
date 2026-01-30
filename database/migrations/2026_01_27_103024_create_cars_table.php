@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
-            $table->string('brand_id')->constrained()->cascadeOnDelete();
+            $table->string('brand')->constrained()->cascadeOnDelete();
+            $table->string('model');
             $table->string('kuzow')->nullable();
             $table->string('color');
             $table->string('status_id')->constrained()->cascadeOnDelete();

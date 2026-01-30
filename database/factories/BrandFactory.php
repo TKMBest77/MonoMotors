@@ -29,10 +29,8 @@ class BrandFactory extends Factory
         ];
 
         $brand = fake()->randomElement(array_keys($cars));
-        $model = fake()->randomElement($cars[$brand]);
         return [
             'name' => $brand,
-            'model_name' => $model,
         ];
     }
 }
