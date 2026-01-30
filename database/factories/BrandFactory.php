@@ -20,12 +20,12 @@ class BrandFactory extends Factory
         $cars = [
             "Toyota" => ["Avalon", "Camry", "Corolla", "Crown", "Grand Highlander", "Highlander", "Land Cruiser", "Prado", "RAV4", "Sienna", "Yaris"],
             "Lexus" => ["ES 250", "ES 300", "ES 350", "IS 300", "IS 350", "LS 400", "LS 500", "LX 450", "LX 570", "RX 350"],
-            "Mercedes-Benz" => ["400E", "AMG GT", "C250", "C300", "C350", "C43 AMG", "E280", "E300", "E350", "E500", "ML350", "ML400", "Maybach GLS", "S-Class", "R-Class", "SL-Class", "W212"],
-            "BMW" => ["M4", "M5", "M6", "M8", "M8 Gran Coupe", "X1", "X2", "X3", "X4", "X5", "X6", "X7", "Z4", "i4", "i7", "i8", 'iX'],
+            "Mercedes-Benz" => ["400E", "AMG GT", "C250", "C300", "C350", "C43 AMG", "E300", "E350", "ML350", "ML400", "Maybach GLS", "S-Class", "R-Class", "SL-Class"],
+            "BMW" => ["M4", "M5", "M6", "M8", "M8 Gran Coupe", "X1", "X2", "X5", "X6", "X7", "Z4", "i7", "i8"],
             "Hyundai" => ["Elantra", "Sonata", "Mufasa", "NEXO", "Santa Fe", "Tucson", "Venue"],
             "Genesis" => ["G70", "G80", "G90", "GV 60", "GV 70", "GV 80"],
-            "Kia" => ["K3", "K5", "K7", "Optima", "Sorento", "Sportage", "Stinger", "Telluride"],
-            "Audi" => ["A4", "A5", "Q3", "Q5", "Q7", "Q8", "RS 6", "SQ 8", "TT RS"],
+            "KIA" => ["K3", "K5", "K7", "Sorento", "Sportage", "Stinger", "Telluride"],
+            "Audi" => ["A4", "A5", "Q3", "Q5", "Q7", "Q8", "RS6", "SQ8", "TT RS"],
         ];
 
         $brand = fake()->randomElement(array_keys($cars));
