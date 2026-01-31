@@ -41,6 +41,7 @@ class CarFactory extends Factory
             'status_id' => Status::inRandomOrder()->first()->name,
             'year' => Year::inRandomOrder()->first()->year,
             'transmission' => fake()->randomElement(['Automatic', 'Mechanic']),
+            'drive' => fake()->randomElement(['AWD', 'FWD', '4WD', 'RWD']),
             'motor' => fake()->randomFloat(1, 2, 5),
             'is_new' => fake()->boolean(70),
             'price' => fake()->numberBetween(15000, 150000),

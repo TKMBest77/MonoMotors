@@ -24,4 +24,18 @@ class Car extends Model
     public function year() {
         return $this->belongsTo(Year::class);
     }
+
+    protected $fillable = [
+        'brand',
+        'model',
+        'kuzow',
+        'color',
+        'status_id',
+        'year',
+        'transmission',
+        'motor',
+        'is_new',
+        'price',
+        'description',
+    ];
 }

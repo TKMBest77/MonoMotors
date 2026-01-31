@@ -15,15 +15,16 @@ return new class extends Migration
             $table->id();
             $table->string('brand')->constrained()->cascadeOnDelete();
             $table->string('model');
-            $table->string('kuzow')->nullable();
-            $table->string('color');
+            $table->string('kuzow');
+            $table->string('color')->nullable();
             $table->string('status_id')->constrained()->cascadeOnDelete();
             $table->integer('year');
-            $table->string('transmission');
+            $table->string('transmission')->nullable();
+            $table->string('drive');
             $table->float('motor');
-            $table->boolean('is_new');
+            $table->boolean('is_new')->nullable();
             $table->integer('price');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

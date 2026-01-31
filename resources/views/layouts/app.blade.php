@@ -15,6 +15,10 @@
     @include('app.navbar')
 
     @yield('content')
+
+    @include('layouts.footer')
+
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 </body>
 
 </html>

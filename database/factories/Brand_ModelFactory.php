@@ -6,9 +6,9 @@ use App\Models\Brand;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Brand_Model>
  */
-class ModelFactory extends Factory
+class Brand_ModelFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -28,11 +28,9 @@ class ModelFactory extends Factory
             "Audi" => ["A4", "A5", "Q3", "Q5", "Q7", "Q8", "RS6", "SQ8", "TT RS"],
         ];
 
-        $brand_name = fake()->randomElement(array_keys($cars));
+        $brand = Brand::inRandomOrder()->first()->name;
 
-        $brand = Brand::firstOrCreate(['name' => $brand_name]);
-
-        $model = fake()->randomElement($cars[$brand_name]);
+        $model = fake()->randomElement($cars[$brand]);
 
         return [
             'brand' => $brand,
