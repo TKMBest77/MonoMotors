@@ -4,22 +4,22 @@
             <div class="col-md-4 mb-4">
                 <h4 class="fw-bold mb-3">MONO<span class="text-muted">MOTORS</span></h4>
                 <p class="text-muted small">
-                    Эстетика в каждом движении. Мы подбираем автомобили для тех, кто ценит строгость и безупречное качество.
+                    Aesthetics in every movement. We select cars for those who value precision and impeccable quality.
                 </p>
             </div>
 
             <div class="col-md-2 mb-4">
                 <h6 class="fw-bold text-uppercase mb-3">Меню</h6>
                 <ul class="list-unstyled">
-                    <li><a href="/" class="text-dark text-decoration-none small">Главная</a></li>
-                    <li><a href="/cars" class="text-dark text-decoration-none small">Каталог</a></li>
-                    <li><a href="/about" class="text-dark text-decoration-none small">О нас</a></li>
+                    <li><a href="/" class="text-dark text-decoration-none small">Home</a></li>
+                    <li><a href="/cars" class="text-dark text-decoration-none small">Catalog</a></li>
+                    <li><a href="/about" class="text-dark text-decoration-none small">About Us</a></li>
                 </ul>
             </div>
 
             <div class="col-md-3 mb-4">
-                <h6 class="fw-bold text-uppercase mb-3">Контакты</h6>
-                <p class="small mb-1">Ул. Минимализма, 101</p>
+                <h6 class="fw-bold text-uppercase mb-3">Contact</h6>
+                <p class="small mb-1">St. Minimalism, 101</p>
                 <p class="small mb-1">+7 (999) 000-00-00</p>
                 <p class="small">info@monomotors.com</p>
             </div>

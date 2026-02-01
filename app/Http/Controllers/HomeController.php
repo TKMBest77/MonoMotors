@@ -9,9 +9,11 @@ class HomeController extends Controller
 {
     public function index() {
         $cars = Car::get();
+        $brands = Car::all()->unique('brand');
 
         return view('home')->with([
             'cars' => $cars,
+            'brands' => $brands,
         ]);
     }  
 }

@@ -28,7 +28,7 @@
         <div class="col-md-7">
             <div class="ps-md-4">
                 <div class="mb-4">
-                    <h5 class="fw-bold border-bottom pb-2 mb-3 small text-uppercase" style="letter-spacing: 1px;">Технические данные</h5>
+                    <h5 class="fw-bold border-bottom pb-2 mb-3 small text-uppercase" style="letter-spacing: 1px;">Car Details</h5>
 
                     <div class="row g-3">
                         <div class="col-6 col-sm-4">
@@ -40,8 +40,12 @@
                             <span class="fw-bold">{{ $car->year }}</span>
                         </div>
                         <div class="col-6 col-sm-4">
-                            <label class="text-muted small d-block">Кузов</label>
+                            <label class="text-muted small d-block">Body Type</label>
                             <span class="fw-bold">{{ $car->kuzow }}</span>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <label class="text-muted small d-block">Color</label>
+                            <span class="fw-bold">{{ $car->color }}</span>
                         </div>
                         <div class="col-6 col-sm-4">
                             <label class="text-muted small d-block">Transmission</label>
@@ -51,13 +55,17 @@
                             <label class="text-muted small d-block">Drive</label>
                             <span class="fw-bold">{{ $car->drive }}</span>
                         </div>
+                        <div class="col-6 col-sm-4">
+                            <label class="text-muted small d-block">Status</label>
+                            <span class="fw-bold">{{ $car->status_id }}</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="mb-4">
                     <h5 class="fw-bold border-bottom pb-2 mb-2 small text-uppercase">Описание</h5>
                     <p class="text-muted small fw-light lh-base">
-                        {{ $car->description ?? 'Данный автомобиль доступен для осмотра в нашем шоуруме. Полная сервисная история, один владелец. Возможна продажа в лизинг или по системе Trade-in.' }}
+                        {{ $car->description }}
                     </p>
                 </div>
             </div>

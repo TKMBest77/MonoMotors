@@ -4,8 +4,8 @@
 <div class="container py-5">
     <div class="d-flex justify-content-between align-items-end mb-5 border-bottom pb-4">
         <div>
-            <h1 class="fw-bold display-5 mb-0">КАТАЛОГ</h1>
-            <p class="text-muted fw-light text-uppercase mb-0 small">Премиальный парк</p>
+            <h1 class="fw-bold display-5 mb-0">CATALOG</h1>
+            <p class="text-muted fw-light text-uppercase mb-0 small">Premium Park</p>
         </div>
         <div>
             <a href="{{ route('cars.create') }}" class="btn btn-dark">
@@ -32,7 +32,7 @@
                     <h6 class="fw-bold mb-2">{{ $car->model }}</h6>
                     <div class="d-flex justify-content-between align-items-center mt-auto">
                         <span class="fw-bold text-dark">${{ number_format($car->price) }}</span>
-                        <a href="{{ route('cars.show', $car->id) }}" class="btn btn-dark btn-sm rounded-0 fw-bold">ОТКРЫТЬ</a>
+                        <a href="{{ route('cars.show', $car->id) }}" class="btn btn-dark btn-sm rounded-0 fw-bold">SHOW MORE</a>
                     </div>
                 </div>
             </div>
