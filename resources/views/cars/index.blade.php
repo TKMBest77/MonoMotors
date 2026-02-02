@@ -8,7 +8,7 @@
             <p class="text-muted fw-light text-uppercase mb-0 small">Premium Park</p>
         </div>
         <div>
-            <a href="{{ route('cars.create') }}" class="btn btn-dark">
+            <a href="{{ route('cars.create') }}" class="btn btn-dark rounded-pill">
                 ADD CAR
             </a>
         </div>
@@ -23,7 +23,7 @@
                         <img src="{{ asset('img/' . $car->brand . '/' . $car->brand . '_' . $car->model . '.webp') }}"
                             class="w-100 h-100"
                             alt="{{ $car->model }}"
-                            style="object-fit: contain; padding: 10px;"> {{-- contain сохранит пропорции полностью --}}
+                            style="object-fit: contain; padding: 10px;">
                     </a>
                 </div>
 
@@ -32,7 +32,7 @@
                     <h6 class="fw-bold mb-2">{{ $car->model }}</h6>
                     <div class="d-flex justify-content-between align-items-center mt-auto">
                         <span class="fw-bold text-dark">${{ number_format($car->price) }}</span>
-                        <a href="{{ route('cars.show', $car->id) }}" class="btn btn-dark btn-sm rounded-0 fw-bold">SHOW MORE</a>
+                        <a href="{{ route('cars.show', $car->id) }}" class="btn btn-dark btn-sm rounded-0">SHOW MORE</a>
                     </div>
                 </div>
             </div>

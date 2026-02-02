@@ -9,7 +9,7 @@
             </div>
 
             <div class="col-md-2 mb-4">
-                <h6 class="fw-bold text-uppercase mb-3">Меню</h6>
+                <h6 class="fw-bold text-uppercase mb-3">Pages</h6>
                 <ul class="list-unstyled">
                     <li><a href="/" class="text-dark text-decoration-none small">Home</a></li>
                     <li><a href="/cars" class="text-dark text-decoration-none small">Catalog</a></li>
@@ -25,16 +25,17 @@
             </div>
 
             <div class="col-md-3 mb-4 text-md-end">
-                <h6 class="fw-bold text-uppercase mb-3">Мы в сети</h6>
+                <h6 class="fw-bold text-uppercase mb-3">Our Social Medias</h6>
                 <a href="#" class="link-dark link-underline-opacity-0 me-1"><i class="bi bi-instagram h4"></i></a>
-                <a href="#" class="link-dark link-underline-opacity-0 ms-4"><i class="bi bi-telegram h4"></i></a>
+                <a href="#" class="link-dark link-underline-opacity-0 ms-4"><i class="bi bi-twitter-x h4"></i></a>
+                <a href="#" class="link-dark link-underline-opacity-0 ms-4"><i class="bi bi-tiktok h4"></i></a>
             </div>
         </div>
 
         <div class="row mt-4 pt-4 border-top">
             <div class="col-md-12 text-center">
                 <p class="text-muted text-uppercase mb-0" style="font-size: 0.75rem; letter-spacing: 2px;">
-                    © {{ date('Y') }} MONOMOTORS STUDIO. All rights reserved.
+                    © {{ date('Y') }} MONOMOTORS CAR DEALERSHIP. All rights reserved.
                 </p>
             </div>
         </div>

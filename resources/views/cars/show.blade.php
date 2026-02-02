@@ -4,7 +4,7 @@
 <div class="container py-4">
     <div class="row align-items-center mb-4">
         <div class="col-auto">
-            <a href="{{ route('cars.index') }}" class="btn btn-outline-secondary rounded-3">
+            <a href="/cars" class="btn btn-outline-secondary rounded-3">
                 <i class="bi bi-arrow-left"></i>
             </a>
         </div>
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="mb-4">
-                    <h5 class="fw-bold border-bottom pb-2 mb-2 small text-uppercase">Описание</h5>
+                    <h5 class="fw-bold border-bottom pb-2 mb-2 small text-uppercase">Description</h5>
                     <p class="text-muted small fw-light lh-base">
                         {{ $car->description }}
                     </p>

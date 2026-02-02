@@ -4,10 +4,10 @@
 <div class="container py-5">
     <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
         <div>
-            <p class="text-muted small text-uppercase mb-0">Каталог моделей</p>
+            <p class="text-muted small text-uppercase mb-0">Models Catalog</p>
             <h2 class="fw-bold text-uppercase m-0">{{ $brand }}</h2>
         </div>
-        <a href="{{ route('brands.index') }}" class="btn btn-sm btn-outline-dark rounded-pill px-4 text-uppercase"><i class="bi bi-arrow-left me-1"></i>Back to Brands</a>
+        <a href="/brands" class="btn btn-sm btn-dark rounded-pill text-uppercase px-3"><i class="bi bi-arrow-left me-1"></i>Brands</a>
     </div>
 
     <div class="row g-4">

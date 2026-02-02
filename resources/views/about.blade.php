@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="p-4">
+            <div class="p-4 border-end border-md-0">
                 <h2 class="fw-bold display-5 mb-2">24/7</h2>
                 <p class="text-muted text-uppercase small fw-bold">Customer Support</p>
             </div>

@@ -12,7 +12,7 @@
 </div>
 
 <div class="container">
-    <div class="d-flex justify-content-between align-items-center gx-4">
+    <div class="d-flex justify-content-between align-items-center gx-4 mb-3">
         <div>
             <img src="{{ asset('img/MonoMotors_3D.png') }}" class="w-75" alt="">
         </div>
