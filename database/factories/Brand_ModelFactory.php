@@ -26,6 +26,8 @@ class Brand_ModelFactory extends Factory
             "Genesis" => ["G70", "G80", "G90", "GV 60", "GV 70", "GV 80"],
             "KIA" => ["K3", "K5", "K7", "Sorento", "Sportage", "Stinger", "Telluride"],
             "Audi" => ["A4", "A5", "Q3", "Q5", "Q7", "Q8", "RS6", "SQ8", "TT RS"],
+            "Volkswagen" => ["Amarok", "Arteon", "Atlas", "Bora", "CC", "GTI", "Jetta GLI", "Passat", "Polo", "Tiguan", "Touareg"],
+            "Nissan" => ["Almera", 'Altima', 'Armada', 'Frontier', 'GT-R', 'Juke', 'Kicks', 'Leaf', 'Maxima', 'Murano', 'Pathfinder', 'Patrol', 'Qashqai', 'Rogue', 'Sentra', 'Sunny', 'Teana', 'Titan', 'Versa'],
         ];
 
         $brand = Brand::inRandomOrder()->first()->name;

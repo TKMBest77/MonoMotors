@@ -22,8 +22,8 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        Brand::factory(100)->create();
-        Brand_Model::factory(100)->create();
+        Brand::factory(200)->create();
+        Brand_Model::factory(200)->create();
         Year::factory(10)->create();
         Kuzow::factory(4)->sequence(
             ['name' => 'Sedan'],
@@ -36,6 +36,6 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Sold'],
             ['name' => 'Being Repaired'],
         )->create();
-        Car::factory(100)->create();
+        Car::factory(400)->create();
     }
 }
