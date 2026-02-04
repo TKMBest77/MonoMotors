@@ -33,6 +33,7 @@ class Car extends Model
         'status_id',
         'year',
         'transmission',
+        'drive',
         'motor',
         'is_new',
         'price',

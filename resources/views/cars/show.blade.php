@@ -4,7 +4,7 @@
 <div class="container py-4">
     <div class="row align-items-center mb-4">
         <div class="col-auto">
-            <a href="/cars" class="btn btn-outline-secondary rounded-3">
+            <a href="{{ url()->previous() }}" class="btn btn-outline-secondary rounded-3">
                 <i class="bi bi-arrow-left"></i>
             </a>
         </div>

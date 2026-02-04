@@ -25,7 +25,7 @@ class CarFactory extends Factory
             "Lexus" => ["ES 250", "ES 300", "ES 350", "IS 300", "IS 350", "LS 400", "LS 500", "LX 450", "LX 570", "RX 350"],
             "Mercedes-Benz" => ["400E", "AMG GT", "C250", "C300", "C350", "C43 AMG", "E300", "E350", "ML350", "ML400", "Maybach GLS", "S-Class", "R-Class", "SL-Class"],
             "BMW" => ["M4", "M5", "M6", "M8", "M8 Gran Coupe", "X1", "X2", "X5", "X6", "X7", "Z4", "i7", "i8"],
-            "Hyundai" => ["Elantra", "Sonata", "Mufasa", "NEXO", "Santa Fe", "Tucson", "Venue"],
+            "Hyundai" => ["Elantra", "Grandeur", "Sonata", "Mufasa", "NEXO", "Santa Fe", "Tucson", "Venue"],
             "Genesis" => ["G70", "G80", "G90", "GV 60", "GV 70", "GV 80"],
             "KIA" => ["K3", "K5", "K7", "Sorento", "Sportage", "Stinger", "Telluride"],
             "Audi" => ["A4", "A5", "Q3", "Q5", "Q7", "Q8", "RS6", "SQ8", "TT RS"],
